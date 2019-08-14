@@ -9,10 +9,10 @@ import Dialogs from './components/Dialogs/Dialogs';
 function App() {
   return (
     <div className='app-wrapper'>
-      <Header/>
+      <Header />
       <Navbar />
-      <div>
-      <Dialogs />
+      <div class="app-wrapper-content">
+        <Dialogs />
       </div>
       {/* <Profile /> */}
     </div>
