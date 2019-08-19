@@ -17,6 +17,7 @@ function App() {
         <Header />
         <Navbar />
         <div class="app-wrapper-content">
+          {/* exact */}
           <Route path = '/profile' component = {Profile} />
           <Route path = '/dialogs' component = {Dialogs} />
           <Route path = '/news' component = {News} />
