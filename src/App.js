@@ -24,8 +24,8 @@ function App(props) {
           <Route path = '/music' component = {Music} />
           <Route path = '/settings' component = {Settings} /> */}
 
-          <Route path = '/profile' render = { () => <Profile postData = {props.postData} /> } />
-          <Route path = '/dialogs' render = { () => <Dialogs dialogsData = {props.dialogsData} messagesData = {props.messagesData}/> } />
+          <Route path = '/profile' render = { () => <Profile postData = {props.state.profilePage.postData} /> } />
+          <Route path = '/dialogs' render = { () => <Dialogs dialogsData = {props.state.dialogsPage.dialogsData} messagesData = {props.state.dialogsPage.messagesData}/> } />
           <Route path = '/news' redner = { () => <News /> } />
           <Route path = '/music' render = { () => <Music /> } />
           <Route path = '/settings' render = { () => <Settings /> } />
